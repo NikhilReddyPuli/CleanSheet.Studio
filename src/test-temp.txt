@@ -1,0 +1,1 @@
+       <p className="font-['Zaslia:Regular',sans-serif] leading-[1.5] not-italic relative shrink-0 text-[36px] text-black text-nowrap tracking-[4.68px] uppercase">"When design is clear, performance improves automatically."</p>

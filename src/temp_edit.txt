@@ -1,0 +1,4 @@
+Line 209: className="absolute top-[-40px] left-[-40px] w-[80px] h-[80px] border-l-2 border-t-2 border-[#fdd2b0]/30"
+Line 389: className="absolute bottom-[-60px] right-[-40px] w-[80px] h-[80px] border-r-2 border-b-2 border-[#fdd2b0]/30"
+Line 775: className="absolute top-[-40px] left-[-40px] w-[80px] h-[80px] border-l-2 border-t-2 border-[#fdd2b0]/30"
+Line 782: className="absolute bottom-[-40px] right-[-40px] w-[80px] h-[80px] border-r-2 border-b-2 border-[#fdd2b0]/30"
