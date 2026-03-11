@@ -1231,10 +1231,26 @@ function Frame14() {
     <div 
       ref={ref}
       id="first-project-trigger"
-      className="relative shadow-[8px_8px_8px_0px_rgba(0,0,0,0.75)] group cursor-pointer transition-all duration-500 w-full"
+      className="relative shadow-[8px_8px_8px_0px_rgba(0,0,0,0.75)] group cursor-pointer transition-all duration-500 w-full overflow-hidden"
     >
       <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#fdd2b0] transition-all duration-500 pointer-events-none rounded-sm" />
       <img alt="" className="block w-full h-auto pointer-events-none transition-transform duration-500" src={imgFrame30} />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      {/* Project Info */}
+      <div className="absolute top-0 left-0 right-0 p-[48px] opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-4 group-hover:translate-y-0">
+        <p className="font-['Arimo',sans-serif] text-[11px] uppercase tracking-[0.15em] text-[#fdd2b0] mb-[12px]">
+          Branding
+        </p>
+        <h3 className="font-['Delight_Semi_Bold',sans-serif] text-[32px] text-white mb-[8px]">
+          Brand Evolution
+        </h3>
+        <p className="font-['Arimo',sans-serif] text-[14px] text-[#d4d4d4]/90">
+          Complete brand transformation
+        </p>
+      </div>
     </div>
   );
 }
@@ -1242,7 +1258,7 @@ function Frame14() {
 function Card() {
   return (
     <motion.div 
-      className="overflow-clip pointer-events-auto sticky top-0 w-full h-full" 
+      className="pointer-events-auto sticky top-0 w-full h-full" 
       data-name="card 1"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -1256,9 +1272,25 @@ function Card() {
 
 function Frame15() {
   return (
-    <div className="relative shadow-[8px_8px_8px_0px_rgba(0,0,0,0.75)] group cursor-pointer transition-all duration-500 w-full">
+    <div className="relative shadow-[8px_8px_8px_0px_rgba(0,0,0,0.75)] group cursor-pointer transition-all duration-500 w-full overflow-hidden">
       <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#fdd2b0] transition-all duration-500 pointer-events-none rounded-sm" />
       <img alt="" className="block w-full h-auto pointer-events-none transition-transform duration-500" src={imgFrame31} />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      {/* Project Info */}
+      <div className="absolute top-0 left-0 right-0 p-[48px] opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-4 group-hover:translate-y-0">
+        <p className="font-['Arimo',sans-serif] text-[11px] uppercase tracking-[0.15em] text-[#fdd2b0] mb-[12px]">
+          Design
+        </p>
+        <h3 className="font-['Delight_Semi_Bold',sans-serif] text-[32px] text-white mb-[8px]">
+          Visual Identity
+        </h3>
+        <p className="font-['Arimo',sans-serif] text-[14px] text-[#d4d4d4]/90">
+          Unique visual language
+        </p>
+      </div>
     </div>
   );
 }
@@ -1266,7 +1298,7 @@ function Frame15() {
 function Card1() {
   return (
     <motion.div 
-      className="overflow-clip pointer-events-auto sticky top-0 w-full h-full" 
+      className="pointer-events-auto sticky top-0 w-full h-full" 
       data-name="card 2"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -1280,9 +1312,25 @@ function Card1() {
 
 function Frame16() {
   return (
-    <div className="relative shadow-[8px_8px_8px_0px_rgba(0,0,0,0.65)] group cursor-pointer transition-all duration-500 w-full">
+    <div className="relative shadow-[8px_8px_8px_0px_rgba(0,0,0,0.65)] group cursor-pointer transition-all duration-500 w-full overflow-hidden">
       <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#fdd2b0] transition-all duration-500 pointer-events-none rounded-sm" />
       <img alt="" className="block w-full h-auto pointer-events-none transition-transform duration-500" src={imgFrame32} />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      {/* Project Info */}
+      <div className="absolute top-0 left-0 right-0 p-[48px] opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-4 group-hover:translate-y-0">
+        <p className="font-['Arimo',sans-serif] text-[11px] uppercase tracking-[0.15em] text-[#fdd2b0] mb-[12px]">
+          UI/UX
+        </p>
+        <h3 className="font-['Delight_Semi_Bold',sans-serif] text-[32px] text-white mb-[8px]">
+          Digital Experience
+        </h3>
+        <p className="font-['Arimo',sans-serif] text-[14px] text-[#d4d4d4]/90">
+          User-centered design approach
+        </p>
+      </div>
     </div>
   );
 }
@@ -1290,7 +1338,7 @@ function Frame16() {
 function Card2() {
   return (
     <motion.div 
-      className="overflow-clip pointer-events-auto sticky top-0 w-full h-full" 
+      className="pointer-events-auto sticky top-0 w-full h-full" 
       data-name="card 3"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -1304,9 +1352,25 @@ function Card2() {
 
 function Frame17() {
   return (
-    <div className="relative shadow-[8px_8px_8px_0px_rgba(0,0,0,0.35)] group cursor-pointer transition-all duration-500 w-full">
+    <div className="relative shadow-[8px_8px_8px_0px_rgba(0,0,0,0.35)] group cursor-pointer transition-all duration-500 w-full overflow-hidden">
       <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#fdd2b0] transition-all duration-500 pointer-events-none rounded-sm" />
       <img alt="" className="block w-full h-auto pointer-events-none transition-transform duration-500" src={imgFrame33} />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      {/* Project Info */}
+      <div className="absolute top-0 left-0 right-0 p-[48px] opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-4 group-hover:translate-y-0">
+        <p className="font-['Arimo',sans-serif] text-[11px] uppercase tracking-[0.15em] text-[#fdd2b0] mb-[12px]">
+          Marketing
+        </p>
+        <h3 className="font-['Delight_Semi_Bold',sans-serif] text-[32px] text-white mb-[8px]">
+          Creative Campaign
+        </h3>
+        <p className="font-['Arimo',sans-serif] text-[14px] text-[#d4d4d4]/90">
+          Strategic marketing design
+        </p>
+      </div>
     </div>
   );
 }
@@ -1314,7 +1378,7 @@ function Frame17() {
 function Card3() {
   return (
     <motion.div 
-      className="overflow-clip pointer-events-auto sticky top-0 w-full h-full" 
+      className="pointer-events-auto sticky top-0 w-full h-full" 
       data-name="card 4"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -1328,9 +1392,25 @@ function Card3() {
 
 function Frame18() {
   return (
-    <div className="relative shadow-[6px_10px_8px_0px_rgba(0,0,0,0.15)] group cursor-pointer transition-all duration-500 w-full">
+    <div className="relative shadow-[6px_10px_8px_0px_rgba(0,0,0,0.15)] group cursor-pointer transition-all duration-500 w-full overflow-hidden">
       <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#fdd2b0] transition-all duration-500 pointer-events-none rounded-sm" />
       <img alt="" className="block w-full h-auto pointer-events-none transition-transform duration-500" src={imgFrame34} />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      {/* Project Info */}
+      <div className="absolute top-0 left-0 right-0 p-[48px] opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-4 group-hover:translate-y-0">
+        <p className="font-['Arimo',sans-serif] text-[11px] uppercase tracking-[0.15em] text-[#fdd2b0] mb-[12px]">
+          Branding
+        </p>
+        <h3 className="font-['Delight_Semi_Bold',sans-serif] text-[32px] text-white mb-[8px]">
+          Brand Assets
+        </h3>
+        <p className="font-['Arimo',sans-serif] text-[14px] text-[#d4d4d4]/90">
+          Comprehensive brand materials
+        </p>
+      </div>
     </div>
   );
 }
@@ -1338,7 +1418,7 @@ function Frame18() {
 function Card4() {
   return (
     <motion.div 
-      className="overflow-clip pointer-events-auto sticky top-0 w-full h-full" 
+      className="pointer-events-auto sticky top-0 w-full h-full" 
       data-name="card 5"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -1351,7 +1431,28 @@ function Card4() {
 }
 
 function Frame19() {
-  return null;
+  return (
+    <div className="relative shadow-[6px_10px_8px_0px_rgba(0,0,0,0.15)] group cursor-pointer transition-all duration-500 w-full overflow-hidden">
+      <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#fdd2b0] transition-all duration-500 pointer-events-none rounded-sm" />
+      <img alt="" className="block w-full h-auto pointer-events-none transition-transform duration-500" src={imgFrame35} />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      {/* Project Info */}
+      <div className="absolute top-0 left-0 right-0 p-[48px] opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-4 group-hover:translate-y-0">
+        <p className="font-['Arimo',sans-serif] text-[11px] uppercase tracking-[0.15em] text-[#fdd2b0] mb-[12px]">
+          Branding
+        </p>
+        <h3 className="font-['Delight_Semi_Bold',sans-serif] text-[32px] text-white mb-[8px]">
+          Brand Strategy
+        </h3>
+        <p className="font-['Arimo',sans-serif] text-[14px] text-[#d4d4d4]/90">
+          Comprehensive brand system
+        </p>
+      </div>
+    </div>
+  );
 }
 
 function Card5() {
@@ -1359,7 +1460,28 @@ function Card5() {
 }
 
 function Frame20() {
-  return null;
+  return (
+    <div className="relative shadow-[6px_10px_8px_0px_rgba(0,0,0,0.15)] group cursor-pointer transition-all duration-500 w-full overflow-hidden">
+      <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#fdd2b0] transition-all duration-500 pointer-events-none rounded-sm" />
+      <img alt="" className="block w-full h-auto pointer-events-none transition-transform duration-500" src={imgFrame36} />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      {/* Project Info */}
+      <div className="absolute top-0 left-0 right-0 p-[48px] opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-4 group-hover:translate-y-0">
+        <p className="font-['Arimo',sans-serif] text-[11px] uppercase tracking-[0.15em] text-[#fdd2b0] mb-[12px]">
+          Branding
+        </p>
+        <h3 className="font-['Delight_Semi_Bold',sans-serif] text-[32px] text-white mb-[8px]">
+          Brand Identity
+        </h3>
+        <p className="font-['Arimo',sans-serif] text-[14px] text-[#d4d4d4]/90">
+          Strategic brand development
+        </p>
+      </div>
+    </div>
+  );
 }
 
 function Card6() {
@@ -1367,7 +1489,28 @@ function Card6() {
 }
 
 function Frame21() {
-  return null;
+  return (
+    <div className="relative shadow-[6px_10px_8px_0px_rgba(0,0,0,0.15)] group cursor-pointer transition-all duration-500 w-full overflow-hidden">
+      <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#fdd2b0] transition-all duration-500 pointer-events-none rounded-sm" />
+      <img alt="" className="block w-full h-auto pointer-events-none transition-transform duration-500" src={imgFrame37} />
+      
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      
+      {/* Project Info */}
+      <div className="absolute top-0 left-0 right-0 p-[48px] opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-y-4 group-hover:translate-y-0">
+        <p className="font-['Arimo',sans-serif] text-[11px] uppercase tracking-[0.15em] text-[#fdd2b0] mb-[12px]">
+          Creative
+        </p>
+        <h3 className="font-['Delight_Semi_Bold',sans-serif] text-[32px] text-white mb-[8px]">
+          Visual Design
+        </h3>
+        <p className="font-['Arimo',sans-serif] text-[14px] text-[#d4d4d4]/90">
+          Creative visual solutions
+        </p>
+      </div>
+    </div>
+  );
 }
 
 function Card7() {
@@ -1424,7 +1567,7 @@ function ScrollProjects() {
       </div>
       
       {/* Frame 18 - Fifth Project */}
-      <div className="sticky top-20 z-[14] flex items-start justify-center pt-2 bg-[#0a0a0a]">
+      <div className="sticky top-20 z-[14] flex items-start justify-center pt-2 pb-8 bg-[#0a0a0a]">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -1435,6 +1578,8 @@ function ScrollProjects() {
           <Frame18 />
         </motion.div>
       </div>
+      
+
     </div>
   );
 }

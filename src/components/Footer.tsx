@@ -24,9 +24,9 @@ export function Footer() {
   }, []);
   
   return (
-    <div className="relative bg-[#0a0a0a] w-full min-w-[1920px] h-[1080px] overflow-hidden flex items-center" data-name="footer">
-      {/* Background grid lines - Vertical lines (Group2) - Extended to full width */}
-      <div className="absolute h-[1241.023px] left-0 opacity-5 top-0 w-full pointer-events-none">
+    <div className="relative bg-[#0a0a0a] w-full lg:min-w-[1920px] lg:h-[1080px] min-h-[600px] overflow-hidden flex items-center" data-name="footer">
+      {/* Background grid lines - Vertical lines (Group2) - Extended to full width - Desktop only */}
+      <div className="desktop-only absolute h-[1241.023px] left-0 opacity-5 top-0 w-full pointer-events-none">
         <div className="absolute inset-0">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1920 1242">
             <line stroke="white" x1="0.5" x2="0.5" y1="0" y2="1241.02" />
@@ -131,8 +131,8 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Background grid lines - Horizontal lines (Group3) - Extended to full width */}
-      <div className="absolute h-[1203.662px] left-0 opacity-5 top-[22.74px] w-full pointer-events-none">
+      {/* Background grid lines - Horizontal lines (Group3) - Extended to full width - Desktop only */}
+      <div className="desktop-only absolute h-[1203.662px] left-0 opacity-5 top-[22.74px] w-full pointer-events-none">
         <div className="absolute inset-0">
           <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1920 1205">
             <line stroke="white" x1="0" x2="1920" y1="0.5" y2="0.5" />

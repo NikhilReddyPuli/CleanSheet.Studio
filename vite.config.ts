@@ -1,4 +1,5 @@
-import { defineConfig } from 'vite';
+
+  import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
 
@@ -91,7 +92,7 @@ import { defineConfig } from 'vite';
     },
     build: {
       target: 'esnext',
-      outDir: 'dist', // changed from 'build' to 'dist' for Vercel compatibility
+      outDir: 'build',
     },
     server: {
       port: 3000,

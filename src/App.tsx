@@ -1,6 +1,8 @@
 import Desktop6 from "./imports/Desktop6";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { AboutPage } from "./components/AboutPage";
+import { MobileHome } from "./components/MobileHome";
+import { MobileAbout } from "./components/MobileAbout";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "motion/react";
 
@@ -32,7 +34,7 @@ export default function App() {
         /* Import Google Fonts */
         @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Imperial+Script&display=swap');
         
-        /* Responsive scaling for different screen sizes */
+        /* Desktop: Keep original zoom-based scaling for laptop dimensions (1024px and above) */
         @media (min-width: 1920px) {
           body {
             zoom: 1;
@@ -75,15 +77,31 @@ export default function App() {
           }
         }
         
-        @media (max-width: 1023px) and (min-width: 768px) {
+        /* Mobile: Remove zoom and use native responsive design (below 1024px) */
+        @media (max-width: 1023px) {
           body {
-            zoom: 0.4;
+            zoom: 1;
+          }
+          
+          /* Hide desktop version */
+          .desktop-only {
+            display: none !important;
+          }
+          
+          /* Show mobile version */
+          .mobile-only {
+            display: block !important;
           }
         }
         
-        @media (max-width: 767px) {
-          body {
-            zoom: 0.2;
+        /* Desktop: Hide mobile version */
+        @media (min-width: 1024px) {
+          .mobile-only {
+            display: none !important;
+          }
+          
+          .desktop-only {
+            display: block !important;
           }
         }
       `}</style>
@@ -97,8 +115,17 @@ export default function App() {
       
       {/* Main Content */}
       {!isLoading && (
-        currentPage === "home" ? <Desktop6 key="home" /> : 
-        <AboutPage key="about" />
+        <>
+          {/* Desktop Version */}
+          <div className="desktop-only">
+            {currentPage === "home" ? <Desktop6 key="home" /> : <AboutPage key="about" />}
+          </div>
+          
+          {/* Mobile Version */}
+          <div className="mobile-only">
+            {currentPage === "home" ? <MobileHome key="mobile-home" /> : <MobileAbout key="mobile-about" />}
+          </div>
+        </>
       )}
     </div>
   );
